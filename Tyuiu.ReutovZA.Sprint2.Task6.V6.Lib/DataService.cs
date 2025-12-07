@@ -18,7 +18,7 @@ namespace Tyuiu.ReutovZA.Sprint2.Task6.V5.Lib
                 12 => "дама",
                 13 => "король",
                 14 => "туз",
-                _ => throw new ArgumentException($"Некорректное значение карты: {value}. Допустимый диапазон: 6-14")
+                _ => throw new ArgumentException($"Некорректное значениее карты: {value}. Допустимый диапазон: 6-14")
             };
 
             return cardName;
