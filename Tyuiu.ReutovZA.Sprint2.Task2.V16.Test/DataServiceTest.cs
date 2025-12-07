@@ -1,0 +1,30 @@
+﻿using Tyuiu.ReutovZA.Sprint2.Task2.V16.Lib;
+
+namespace Tyuiu.ReutovZA.Sprint2.Task2.V16.Test
+{
+    [TestClass]
+    public class DataServiceTest
+    {
+        [TestMethod]
+        public void ValidCheckDotInShadedArea()
+        {
+            DataService ds = new DataService();
+            int x = 4;
+            int y = 4;
+            bool res = ds.CheckDotInShadedArea(x, y);
+            bool wait = true;
+            Assert.AreEqual(wait, res);
+        }
+
+        [TestMethod]
+        public void ValidCheckDotOutsideShadedArea()
+        {
+            DataService ds = new DataService();
+            int x = 1;
+            int y = 1;
+            bool res = ds.CheckDotInShadedArea(x, y);
+            bool wait = false;
+            Assert.AreEqual(wait, res);
+        }
+    }
+}
